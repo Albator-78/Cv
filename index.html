@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Arnauld Thimothé | Technicien de maintenance</title>
+
+<style>
+:root {
+    --ink: #18222d;
+    --blue: #176b87;
+    --pale: #eef7f8;
+    --muted: #60717d;
+    --card: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink);
+    background: #f6f8f9;
+}
+
+a {
+    color: inherit;
+}
+
+/* =========================
+   EN-TÊTE
+   ========================= */
+
+.hero {
+    padding: 64px 7vw;
+    background: linear-gradient(
+        135deg,
+        #102b39,
+        #176b87
+    );
+    color: white;
+}
+
+.hero p {
+    max-width: 760px;
+    font-size: 1.12rem;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    font-size: .78rem;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 6vw, 4.6rem);
+    line-height: 1;
+    margin: .15em 0;
+}
+
+.hero h2 {
+    color: #d6f4f8;
+}
+
+/* =========================
+   BOUTONS
+   ========================= */
+
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 10px;
+    background: white;
+    color: #123847;
+    text-decoration: none;
+    font-weight: 700;
+    transition:
+        transform .2s ease,
+        opacity .2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: .92;
+}
+
+.btn.alt {
+    background: transparent;
+    color: white;
+    border: 1px solid #bde1e9;
+}
+
+/* =========================
+   CONTENU
+   ========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 32px 20px 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px #16222d12;
+    margin-bottom: 24px;
+}
+
+h2 {
+    color: var(--blue);
+    margin-top: 0;
+}
+
+h3 {
+    margin-bottom: 4px;
+}
+
+/* =========================
+   COMPÉTENCES
+   ========================= */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: var(--pale);
+    padding: 7px 10px;
+    border-radius: 999px;
+    font-size: .9rem;
+}
+
+/* =========================
+   EXPÉRIENCES
+   ========================= */
+
+.meta {
+    color: var(--muted);
+    margin-top: 0;
+}
+
+.job {
+    padding: 3px 0 18px;
+    border-bottom: 1px solid #e6ecef;
+}
+
+.job:last-child {
+    border: 0;
+    padding-bottom: 0;
+}
+
+/* =========================
+   PIED DE PAGE
+   ========================= */
+
+footer {
+    text-align: center;
+    color: var(--muted);
+    padding: 25px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 760px) {
+
+    .hero {
+        padding: 45px 22px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    main {
+        padding: 22px 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="eyebrow">
+        Maintenance · Technique · ERP
+    </div>
+
+    <h1>Arnauld Thimothé</h1>
+
+    <h2>
+        Technicien de maintenance polyvalent<br>
+        Responsable technique
+    </h2>
+
+    <p>
+        Plus de 10 ans d’expérience en gestion technique
+        d’établissements recevant du public, maintenance
+        préventive et curative, diagnostic de pannes et
+        continuité de service.
+    </p>
+
+    <div class="actions">
+
+        <a
+            class="btn"
+            href="mailto:thimothearnauld@gmail.com">
+            Me contacter
+        </a>
+
+        <a
+            class="btn alt"
+            href="tel:+33753627683">
+            07 53 62 76 83
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<div class="grid">
+
+    <!-- COLONNE GAUCHE -->
+
+    <aside>
+
+        <section class="card">
+
+            <h2>À propos</h2>
+
+            <p>
+                Beaugency (45190)<br>
+                Permis B · Mobilité 50 km<br>
+                Disponible à temps plein
+            </p>
+
+            <p>
+                Formé en électrotechnique, maintenance
+                des bâtiments et économie de la construction.
+                Autonome, réactif et expérimenté en
+                sécurité ERP.
+            </p>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Compétences</h2>
+
+            <div class="tags">
+
+                <span class="tag">
+                    Maintenance préventive et curative
+                </span>
+
+                <span class="tag">
+                    Diagnostic de pannes
+                </span>
+
+                <span class="tag">
+                    Dépannage premier niveau
+                </span>
+
+                <span class="tag">
+                    Électrotechnique
+                </span>
+
+                <span class="tag">
+                    Câblage réseau
+                </span>
+
+                <span class="tag">
+                    Contrôle et remise en service
+                </span>
+
+                <span class="tag">
+                    Gestion technique de site
+                </span>
+
+                <span class="tag">
+                    Sécurité ERP
+                </span>
+
+                <span class="tag">
+                    Prévention des risques
+                </span>
+
+                <span class="tag">
+                    Projection numérique et son/image
+                </span>
+
+                <span class="tag">
+                    Accueil et encaissement
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Habilitations</h2>
+
+            <p>
+                SSIAP 1 · Sécurité incendie ERP<br>
+                SST · Sauveteur secouriste du travail
+            </p>
+
+            <h2>Langues</h2>
+
+            <p>
+                Anglais professionnel (B1)
+            </p>
+
+        </section>
+
+    </aside>
+
+
+    <!-- COLONNE PRINCIPALE -->
+
+    <div>
+
+        <section class="card">
+
+            <h2>Expérience</h2>
+
+
+            <div class="job">
+
+                <h3>
+                    Responsable technique et exploitation
+                    de cinémas
+                </h3>
+
+                <p class="meta">
+                    2014 - 2023 ·
+                    Le Palace (41),
+                    Les Rhodos (74),
+                    Le Dunois (45),
+                    Le Charmieux (74),
+                    Le Melliès (79)
+                </p>
+
+                <p>
+                    Gestion technique quotidienne,
+                    contrôle des installations,
+                    maintenance,
+                    diagnostic d'anomalies,
+                    équipements de projection numérique
+                    et son/image,
+                    sécurité ERP,
+                    accueil,
+                    encaissement
+                    et suivi des recettes.
+                </p>
+
+            </div>
+
+
+            <div class="job">
+
+                <h3>
+                    Technicien réseaux et télécoms
+                </h3>
+
+                <p class="meta">
+                    2020 · Infrastructure Réseaux Télécoms
+                </p>
+
+                <p>
+                    Tirage de câbles, raccordements
+                    et contrôle de conformité.
+                </p>
+
+            </div>
+
+
+            <div class="job">
+
+                <h3>
+                    Monteur d’équipements techniques
+                </h3>
+
+                <p class="meta">
+                    2011 · MAG Services 41
+                </p>
+
+                <p>
+                    Installation et montage de paillasses
+                    de laboratoire et sorbonnes d’extraction.
+                </p>
+
+            </div>
+
+
+            <div class="job">
+
+                <h3>
+                    Chef de cabine et projectionniste
+                </h3>
+
+                <p class="meta">
+                    2000 - 2008 ·
+                    Le César,
+                    Les Studio,
+                    Les Enfants du Paradis,
+                    Le Petit Casino
+                </p>
+
+                <p>
+                    Entretien des équipements,
+                    réglages image/son,
+                    résolution d’incidents
+                    et projections 8, 16 et 35 mm.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Formations</h2>
+
+            <p>
+
+                <strong>
+                    Technicien économie de la construction
+                </strong><br>
+                2018 · AFPA Tours
+
+                <br><br>
+
+                <strong>
+                    CAP Opérateur projectionniste
+                </strong><br>
+                2014 - 2015 · GRETA Tours
+
+                <br><br>
+
+                <strong>
+                    Agent de maintenance des bâtiments
+                </strong><br>
+                2010 · AFPA Aireines
+
+                <br><br>
+
+                <strong>
+                    CAP Électrotechnique
+                </strong><br>
+                1996 - 1997 · AFPA Arles
+
+            </p>
+
+        </section>
+
+    </div>
+
+</div>
+
+</main>
+
+
+<footer>
+    Arnauld Thimothé · Technicien de maintenance polyvalent
+</footer>
+
+</body>
+</html>
